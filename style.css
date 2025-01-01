@@ -162,3 +162,75 @@ footer {
 	font-size: 13px;
 }
 }
+
+
+/* ボトム (pcのときは表示させないようにする)*/
+/* https://pecopla.net/web-column/bottom-navigation */
+/* @media(min-width: 768px){ 
+	.bottom-menu{display:none; }
+} */
+ul.bottom-menu{
+	/*スマホの時だけ*//*ボトムメニュー付けたのでフッタを底上げする*/
+	/* @media(max-width: 767px){ 
+	#footer{margin-bottom:48px;}
+	} */
+	/* position: fixed; */
+    left: 0;
+    bottom: 0;
+    background: rgb(240, 240, 240);
+    width: 90%;
+	/* display: inline-block; */
+	display: flex;
+	/* text-align: center; */
+}
+
+.bottom-menu li {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+}
+.bottom-menu a span {
+    display: block;
+    font-size: 13px;
+}
+.bottom-menu img {
+    border:none;
+}
+
+
+ul.bottom-menu-sns{
+    width: 100%;
+	/* display: inline-block; */
+	display: flex;
+	/* text-align: center; */
+}
+
+/* -------------------------------------------------- */
+/* ロゴ画像 */
+img.blogicon-sns-x{
+	background-image: url("./img/logo/logo_x_b.svg");  /* 画像のURLを指定 */ 
+	background-repeat: no-repeat;
+	/* border-radius: 100%; */
+	/* border-style:none; */
+	outline: none;
+	border:none;
+	width: 30px;
+	height: 30px;
+	/* background-size: auto; */
+	background-position: center;
+}
+img.blogicon-home{
+	background-image: url("./img/logo/logo_home_b.svg");  /* 画像のURLを指定 */ 
+	background-repeat: no-repeat;
+	/* border-style:none; */
+	outline: none;
+	/* border:none; */
+	width: 30px;
+	height: 30px;
+	/* background-size: auto; */
+	background-position: center;
+}
+/* -------------------------------------------------- */
